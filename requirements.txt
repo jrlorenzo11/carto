@@ -1,0 +1,7 @@
+uvicorn
+fastapi
+pydantic_settings
+pydantic
+contextlib
+osmnx
+numpy 1.x

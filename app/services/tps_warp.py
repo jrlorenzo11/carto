@@ -52,7 +52,7 @@ class TPSWarp:
         # =========================
         # geometry = OSM
         geom_osm = gdf_match.geometry
-        geom_acad = gdf_match["geometry_right"]
+        geom_acad = gdf_match["geometry"]
 
         mask = (~geom_osm.isna()) & (~geom_acad.isna())
 

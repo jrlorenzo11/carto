@@ -37,3 +37,8 @@
 2026-01-16 10:50:19,520 - INFO - Intersecciones OSM asociadas: 188
 2026-01-16 10:50:19,522 - INFO - Intersecciones finales: 188
 2026-01-16 10:50:19,544 - INFO - Archivo guardado: C:\Users\u173750\OneDrive - Telecom Argentina SA\_17_GIT\carto\data\salida\0.3.1_intersecciones_osm_con_acad.geojson
+2026-01-16 16:04:08,345 - INFO - Archivo procesado correctamente: a1.csv
+2026-01-16 16:09:03,462 - INFO - Intersecciones OSM asociadas: 32
+2026-01-16 16:09:03,470 - INFO - Intersecciones finales: 32
+2026-01-16 16:09:03,510 - INFO - Archivo guardado: C:\Users\u632856\OneDrive - Telecom Argentina SA\Desktop\A Ordenar\Gitlab\Nueva carpeta\carto\data\salida\0.3.1_intersecciones_osm_con_acad.geojson
+2026-01-16 16:09:03,511 - INFO - Matcher completado: 32 matches
