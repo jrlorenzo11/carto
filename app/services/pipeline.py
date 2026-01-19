@@ -33,9 +33,9 @@ class GISPipeline:
             dist_max=self.dist_max
         )
         result_autocad = autocad.procesar(self.archivo)
-
-        gdf_esquinas = result_autocad["gdf_esquinas"]
-
+        path_esquinas= settings.SALIDA_DIR / "0.1.2_esquinas_autocad.geojson"
+        gdf_esquinas = result_autocad["esquinas"]
+        gdf_esquinas = gpd.read_file(path_esquinas)
         assert hasattr(gdf_esquinas, "geometry"), "gdf_esquinas no tiene geometría"
 
         summary["autocad"] = {
@@ -95,11 +95,12 @@ class GISPipeline:
             gdf_match=gdf_match,
             gdf_target=gdf_esquinas
         )
-
+        out_tps = settings.SALIDA_DIR / "0.4.1_esquinas_tps.geojson"
+        gdf_tps.to_file(out_tps, driver="GeoJSON")
 
         summary["tps"] = {
             "features": len(gdf_tps),
-            "output": str(tps.out_file)
+            "output": str(out_tps)
         }
 
         return summary
